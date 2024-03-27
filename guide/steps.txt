@@ -1,0 +1,9 @@
+1--> data collection
+
+2--> labeling of data
+
+3--> data processing
+
+4--> train model
+
+5--> test model
