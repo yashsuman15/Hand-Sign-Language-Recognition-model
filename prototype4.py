@@ -4,6 +4,7 @@ import mediapipe as mp
 import numpy as np
 from PyQt5 import QtWidgets, QtGui, QtCore
 
+
 # main application window
 class HandSignRecognitionApp(QtWidgets.QMainWindow):
     def __init__(self):
@@ -103,8 +104,8 @@ class HandSignRecognitionApp(QtWidgets.QMainWindow):
 
         self.prediction_label = QtWidgets.QLabel("Prediction: ")
         self.prediction_label.setStyleSheet(
-                                        "font-size: 30px; font-weight: bold; color: white; "
-                                        "background-color: rgba(255, 69, 0, 0.5); padding: 20px; border-radius: 10px;")
+            "font-size: 30px; font-weight: bold; color: white; "
+            "background-color: rgba(255, 69, 0, 0.5); padding: 20px; border-radius: 10px;")
         self.right_layout.addWidget(self.prediction_label)
 
         # Add prediction box and buttons
@@ -291,6 +292,7 @@ class HandSignRecognitionApp(QtWidgets.QMainWindow):
             self.prediction_box.setText(current_text[:-1])
             if not current_text[:-1]:
                 self.concatenated_prediction = False
+
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication([])

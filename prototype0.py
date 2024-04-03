@@ -214,5 +214,4 @@ if __name__ == "__main__":
     window = HandSignRecognitionApp()
     window.show()
     app.exec_()
-
 #%%
