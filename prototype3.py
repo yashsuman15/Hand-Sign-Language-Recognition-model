@@ -4,7 +4,6 @@ import mediapipe as mp
 import numpy as np
 from PyQt5 import QtWidgets, QtGui, QtCore
 
-
 # main application window
 class HandSignRecognitionApp(QtWidgets.QMainWindow):
     def __init__(self):
@@ -104,8 +103,8 @@ class HandSignRecognitionApp(QtWidgets.QMainWindow):
 
         self.prediction_label = QtWidgets.QLabel("Prediction: ")
         self.prediction_label.setStyleSheet(
-            "font-size: 30px; font-weight: bold; color: white; "
-            "background-color: rgba(255, 69, 0, 0.5); padding: 20px; border-radius: 10px;")
+                                        "font-size: 30px; font-weight: bold; color: white; "
+                                        "background-color: rgba(255, 69, 0, 0.5); padding: 20px; border-radius: 10px;")
         self.right_layout.addWidget(self.prediction_label)
 
         # Add prediction box and buttons
@@ -149,8 +148,8 @@ class HandSignRecognitionApp(QtWidgets.QMainWindow):
         self.default_webcam_label_text = "Webcam is closed"
         self.webcam_label.setText(self.default_webcam_label_text)
         self.webcam_label.setStyleSheet(
-            "border: 2px solid black; font-size: 40px; "
-            "font-weight: bold; padding: 10px; color: red; font-family: Error;")
+                                        "border: 2px solid black; font-size: 40px; "
+                                        "font-weight: bold; padding: 10px; color: red; font-family: Error;")
         self.webcam_label.setAlignment(QtCore.Qt.AlignCenter)
 
         self.webcam_button_layout.setAlignment(QtCore.Qt.AlignHCenter)
@@ -177,8 +176,8 @@ class HandSignRecognitionApp(QtWidgets.QMainWindow):
             self.close_webcam_button.setEnabled(False)
             self.webcam_label.setText(self.default_webcam_label_text)
             self.webcam_label.setStyleSheet(
-                "border: 2px solid black; font-size: 40px;"
-                " color: red; font-weight: bold; padding: 10px; font-family: Error;")
+                                            "border: 2px solid black; font-size: 40px;"
+                                            " color: red; font-weight: bold; padding: 10px; font-family: Error;")
             self.prediction_label.setText("Prediction: ")
 
     def update_webcam_feed(self):
@@ -292,7 +291,6 @@ class HandSignRecognitionApp(QtWidgets.QMainWindow):
             self.prediction_box.setText(current_text[:-1])
             if not current_text[:-1]:
                 self.concatenated_prediction = False
-
 
 if __name__ == "__main__":
     app = QtWidgets.QApplication([])
