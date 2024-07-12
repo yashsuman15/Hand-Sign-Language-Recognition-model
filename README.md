@@ -17,7 +17,7 @@
 --> Hand Sign Guide + Hand Landmarks Points + Prediction Box + Prediction Text Box
 
 ## prototype5
-### -->
+-->
 
 # To create your own model
 ### step1 - collect_imgs.py          >>> capture img for the model
